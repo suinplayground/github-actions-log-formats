@@ -3,7 +3,8 @@
 ::endgroup::
 ::group::[42m PASS [49m [1msome-rust-lib:build[22m
 [34m$ cargo build[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on build directory
 [1m[32m   Compiling[0m memchr v2.7.2
@@ -65,10 +66,12 @@
 [1m[32m   Compiling[0m tera v1.20.0
 [1m[32m   Compiling[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 10.45s
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-rust-lib:cargo-doc[22m
 [34m$ cargo doc --all-features --no-deps[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[32m   Compiling[0m proc-macro2 v1.0.85
 [1m[32m   Compiling[0m unicode-ident v1.0.12
 [1m[32m   Compiling[0m siphasher v0.3.11
@@ -137,22 +140,28 @@
 [1m[32m Documenting[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 7.54s
 [1m[32m   Generated[0m /Volumes/x/playground/moonrepo/target/doc/some_rust_lib/index.html
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-rust-lib:check[22m
 [34m$ cargo check --all-targets --all-features[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on build directory
 [1m[32m    Checking[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 7.63s
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mtypescript:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m7[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m2[0m[0m[2m[34mms[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+2ms[0m
@@ -162,14 +171,18 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/typescript/src/eslint-plugin-import.d.ts [38;5;38m+1s[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/typescript/src/eslint-plugin-only-warn.d.ts [38;5;38m+2s[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/typescript/src/eslint.config.ts [38;5;38m+1ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mmonorepo-tools:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m5[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m3[0m[0m[2m[34mms[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+2ms[0m
@@ -179,13 +192,15 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/tools/monorepo-tools/moon-smoke.bun.ts [38;5;38m+2s[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/tools/monorepo-tools/project-id.bun.ts [38;5;38m+27ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/tools/monorepo-tools/get-workspace-root.bun.ts [38;5;38m+20ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib:build[22m
 [34m$ tsc --build[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:build[22m
 [34m$ wasm-pack build '--target=bundler' '--out-dir=dist' '--out-name=some-wasm-lib' --no-pack[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[2m[INFO][0m: 🎯  Checking for the Wasm target...
 [1m[2m[INFO][0m: 🌀  Compiling to Wasm...
 [1m[32m   Compiling[0m proc-macro2 v1.0.85
@@ -264,14 +279,18 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
 [1m[2m[INFO][0m: Optimizing wasm binaries with `wasm-opt`...
 [1m[2m[INFO][0m: ✨   Done in 11.91s
 [1m[2m[INFO][0m: 📦   Your wasm pkg is ready to publish at /Volumes/x/playground/moonrepo/libs/some-wasm-lib/dist.
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m4[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m1960[0m[0m[2m[34mµs[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+2ms[0m
@@ -279,10 +298,12 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0m2 files found in: 10ms [38;5;38m+473ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/libs/some-node-lib/src/index.ts [38;5;38m+2ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/libs/some-node-lib/src/index.test.ts [38;5;38m+2s[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib:test[22m
 [34m$ bun run --if-present vitest --run --coverage[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
 [7m[1m[36m RUN [39m[22m[27m [36mv1.6.0[39m [90m/Volumes/x/playground/moonrepo/libs/some-node-lib[39m
 [2m      Coverage enabled with [22m[33mv8[39m
@@ -301,6 +322,7 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 [32;1mAll files[0m | [32;1m    100[0m | [32;1m     100[0m | [32;1m    100[0m | [32;1m    100[0m | [33;1m                 [0m 
 [32;1m index.ts[0m | [32;1m    100[0m | [32;1m     100[0m | [32;1m    100[0m | [32;1m    100[0m | [33;1m                 [0m 
 ----------|---------|----------|---------|---------|-------------------
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mcommits:build[22m
 [34m$ tsc --build[39m
@@ -310,11 +332,14 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-app:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m4[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m1686[0m[0m[2m[34mµs[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+3ms[0m
@@ -322,17 +347,21 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0m2 files found in: 12ms [38;5;38m+576ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/apps/some-node-app/src/main.test.ts [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/apps/some-node-app/src/main.ts [38;5;38m+997ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib-plus:build[22m
 [34m$ tsc --build[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib-plus:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m4[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m1519[0m[0m[2m[34mµs[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+2ms[0m
@@ -340,10 +369,12 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0m2 files found in: 12ms [38;5;38m+574ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/libs/some-node-lib-plus/src/index.test.ts [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/libs/some-node-lib-plus/src/index.ts [38;5;38m+1s[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-lib-plus:test[22m
 [34m$ bun run --if-present vitest --run --coverage[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
 [7m[1m[36m RUN [39m[22m[27m [36mv1.6.0[39m [90m/Volumes/x/playground/moonrepo/libs/some-node-lib-plus[39m
 [2m      Coverage enabled with [22m[33mv8[39m
@@ -362,14 +393,18 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 [32;1mAll files[0m | [32;1m    100[0m | [32;1m     100[0m | [32;1m    100[0m | [32;1m    100[0m | [33;1m                 [0m 
 [32;1m index.ts[0m | [32;1m    100[0m | [32;1m     100[0m | [32;1m    100[0m | [32;1m    100[0m | [33;1m                 [0m 
 ----------|---------|----------|---------|---------|-------------------
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mroot:lint[22m
 [34m$ lint-ts check .secretlintrc.cjs .yarn/plugins/@yarnpkg/plugin-after-install.cjs commitlint.config.js eslint.config.js eslint.config.js npmpackagejsonlint.config.cjs[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color .secretlintrc.cjs .yarn/plugins/@yarnpkg/plugin-after-install.cjs commitlint.config.js eslint.config.js eslint.config.js npmpackagejsonlint.config.cjs
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings .secretlintrc.cjs .yarn/plugins/@yarnpkg/plugin-after-install.cjs commitlint.config.js eslint.config.js eslint.config.js npmpackagejsonlint.config.cjs
 [0m[34mChecked [0m[0m[34m4[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m2[0m[0m[2m[34mms[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: .secretlintrc.cjs,.yarn/plugins/@yarnpkg/plugin-after-install.cjs,commitlint.config.js,eslint.config.js,eslint.config.js,npmpackagejsonlint.config.cjs [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+3ms[0m
@@ -380,14 +415,18 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+8ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/npmpackagejsonlint.config.cjs [38;5;38m+2ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/commitlint.config.js [38;5;38m+0ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mcommits:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m4[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m1801[0m[0m[2m[34mµs[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+3ms[0m
@@ -395,29 +434,35 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0m2 files found in: 11ms [38;5;38m+575ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/commits/lint-commits.bun.ts [38;5;38m+2ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/commits/src/commitlint.config.ts [38;5;38m+714ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msecrets:build[22m
 [34m$ tsc --build[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msecrets:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m3[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m1524[0m[0m[2m[34mµs[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+2ms[0m
   [38;5;38;1meslint:eslint [0mConfig file URL is file:///Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0m0 files found in: 8ms [38;5;38m+573ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mpackage-json:build[22m
 [34m$ tsc --build[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-node-app:test[22m
 [34m$ bun run --if-present vitest --run --coverage[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
 [7m[1m[36m RUN [39m[22m[27m [36mv1.6.0[39m [90m/Volumes/x/playground/moonrepo/apps/some-node-app[39m
 [2m      Coverage enabled with [22m[33mv8[39m
@@ -436,14 +481,18 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 [31;1mAll files[0m | [31;1m      0[0m | [31;1m       0[0m | [31;1m      0[0m | [31;1m      0[0m | [31;1m                 [0m 
 [31;1m main.ts [0m | [31;1m      0[0m | [31;1m       0[0m | [31;1m      0[0m | [31;1m      0[0m | [31;1m1-5              [0m 
 ----------|---------|----------|---------|---------|-------------------
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mpackage-json:lint[22m
 [34m$ lint-ts check[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 $ yarn run -T eslint --cache --cache-location=node_modules/.cache/eslint --cache-strategy=content --max-warnings=0 --no-warn-ignored --no-error-on-unmatched-pattern --color
 $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnings
 [0m[34mChecked [0m[0m[34m5[0m[0m[34m [0m[0m[34mfiles[0m[0m[34m in [0m[0m[34m5[0m[0m[2m[34mms[0m[0m[34m.[0m[0m[34m No fixes needed.[0m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
   [38;5;38;1meslint:eslint [0mUsing file patterns: . [38;5;38m+0ms[0m
   [38;5;38;1meslint:eslint [0mSearching for eslint.config.js [38;5;38m+1ms[0m
   [38;5;38;1meslint:eslint [0mLoading config from /Volumes/x/playground/moonrepo/eslint.config.js [38;5;38m+7ms[0m
@@ -451,6 +500,7 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
   [38;5;38;1meslint:eslint [0m2 files found in: 13ms [38;5;38m+506ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/package-json/lint-package-json.bun.ts [38;5;38m+2ms[0m
   [38;5;38;1meslint:eslint [0mLint /Volumes/x/playground/moonrepo/standards/package-json/src/npm-package-json-lint-config.d.ts [38;5;38m+548ms[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mroot:biome[22m
 ::endgroup::
@@ -461,32 +511,41 @@ $ yarn run -T biome ci --colors=force --no-errors-on-unmatched --error-on-warnin
 ::endgroup::
 ::group::[42m PASS [49m [1mroot:rust-nightly[22m
 [34m$ rustup toolchain install nightly[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
   nightly-aarch64-apple-darwin unchanged - rustc 1.81.0-nightly (8fcd4dd08 2024-06-18)
 
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 info: syncing channel updates for 'nightly-aarch64-apple-darwin'
 info: checking for self-update
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mroot:rye-sync[22m
 [34m$ rye sync[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 Initializing new virtualenv in [36m/Volumes/x/playground/moonrepo/.venv[0m
 Python version: [36mcpython@3.12.3[0m
 Generating production lockfile: /Volumes/x/playground/moonrepo/requirements.lock
 Generating dev lockfile: /Volumes/x/playground/moonrepo/requirements-dev.lock
 Installing dependencies
 Done!
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [2mInstalled [1m3 packages[0m in 47ms[0m
  [32m+[39m [1mpathspec[0m[2m==0.12.1[0m
  [32m+[39m [1mpyyaml[0m[2m==6.0.1[0m
  [32m+[39m [1myamllint[0m[2m==1.35.1[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:cargo-doc[22m
 [34m$ cargo doc --all-features --no-deps[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on package cache
@@ -495,10 +554,12 @@ Done!
 [1m[32m Documenting[0m some-wasm-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-wasm-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 6.31s
 [1m[32m   Generated[0m /Volumes/x/playground/moonrepo/target/doc/some_wasm_lib/index.html
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:check[22m
 [34m$ cargo check --all-targets --all-features[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on package cache
@@ -524,39 +585,49 @@ Done!
 [1m[32m    Checking[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Checking[0m some-wasm-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-wasm-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 5.94s
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:clippy[22m
 [34m$ cargo clippy --all-targets --all-features -- -D warnings[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on package cache
 [1m[36m    Blocking[0m waiting for file lock on build directory
 [1m[32m    Checking[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Checking[0m some-wasm-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-wasm-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 6.35s
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mroot:yamllint[22m
 [34m$ yamllint --strict '--format=colored'[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:rust-nightly[22m
 [34m$ rustup toolchain install nightly[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
   nightly-aarch64-apple-darwin unchanged - rustc 1.81.0-nightly (8fcd4dd08 2024-06-18)
 
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 info: syncing channel updates for 'nightly-aarch64-apple-darwin'
 info: checking for self-update
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-wasm-lib:test[22m
 [34m$ cargo llvm-cov --all-targets --all-features '--color=always'[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 Filename                                                         Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /Volumes/x/playground/moonrepo/libs/some-wasm-lib/src/lib.rs           2[0;31m                 2[0m[0;31m     0.00%[0m           2                 2[0;31m     0.00%[0m           4[0;31m                 4[0m[0;31m     0.00%[0m           0[0;31m                 0[0m         -
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOTAL                                                                  2[0;31m                 2[0m[0;31m     0.00%[0m           2                 2[0;31m     0.00%[0m           4[0;31m                 4[0m[0;31m     0.00%[0m           0[0;31m                 0[0m         -
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [0m[1minfo[0m[1m:[0m cargo-llvm-cov currently setting cfg(coverage); you can opt-out it by passing --no-cfg-coverage
 [1m[32m   Compiling[0m syn v2.0.66
 [1m[32m   Compiling[0m wasm-bindgen-shared v0.2.92
@@ -585,28 +656,36 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mcommits:lint-commits[22m
 [34m$ lint-commits[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-rust-lib:clippy[22m
 [34m$ cargo clippy --all-targets --all-features -- -D warnings[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [1m[32m    Checking[0m some-rust-lib v0.1.0 (/Volumes/x/playground/moonrepo/libs/some-rust-lib)
 [1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1msome-rust-lib:rust-nightly[22m
 [34m$ rustup toolchain install nightly[39m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 
   nightly-aarch64-apple-darwin unchanged - rustc 1.81.0-nightly (8fcd4dd08 2024-06-18)
 
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 info: syncing channel updates for 'nightly-aarch64-apple-darwin'
 info: checking for self-update
+[38;5;236m```[39m
 ::endgroup::
 ::group::[41m FAIL [49m [1msome-rust-lib:test[22m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [0m[1minfo[0m[1m:[0m cargo-llvm-cov currently setting cfg(coverage); you can opt-out it by passing --no-cfg-coverage
 [1m[32m   Compiling[0m memchr v2.7.2
 [1m[32m   Compiling[0m siphasher v0.3.11
@@ -685,9 +764,11 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 [0m[1m[33mwarning[0m[1m:[0m not found object files (searched directories: /Volumes/x/playground/moonrepo/target/llvm-cov-target/debug); this may occur if show-env subcommand is used incorrectly (see docs or other warnings), or unsupported commands are used
 No filenames specified!
 [0m[1m[31merror[0m[1m:[0m failed to generate report: process didn't exit successfully: `/Users/suin/.rustup/toolchains/1.78.0-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/bin/llvm-cov report -use-color=1 -instr-profile=/Volumes/x/playground/moonrepo/target/llvm-cov-target/moonrepo.profdata -ignore-filename-regex '/rustc/([0-9a-f]+|[0-9]+\.[0-9]+\.[0-9]+)/|^/Volumes/x/playground/moonrepo(/.*)?/(tests|examples|benches)/|^/Volumes/x/playground/moonrepo/target/llvm\-cov\-target($|/)|^/Users/suin/\.cargo/(registry|git)/|^/Users/suin/\.rustup/toolchains($|/)'` (exit status: 1)
+[38;5;236m```[39m
 ::endgroup::
 ::group::[41m FAIL [49m [1mpackage-json:lint-package-json[22m
-[48;5;0m　[32m⏺[39m STDOUT　[49m
+[48;5;236m　[32m⏺[39m STDOUT　[49m
+[38;5;236m```[39m
 Linting package.json...
 [31m[1mCannot find module './standards/package-json/dist/npmpackagejsonlint.config'[22m[39m
 [31m[1mRequire stack:[22m[39m
@@ -696,11 +777,15 @@ Linting package.json...
 [31m[1m- /Volumes/x/playground/moonrepo/standards/package-json/node_modules/npm-package-json-lint/node_modules/cosmiconfig/dist/Explorer.js[22m[39m
 [31m[1m- /Volumes/x/playground/moonrepo/standards/package-json/node_modules/npm-package-json-lint/node_modules/cosmiconfig/dist/index.js[22m[39m
 [31m[1m- /Volumes/x/playground/moonrepo/standards/package-json/node_modules/npm-package-json-lint/dist/cli.js[22m[39m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 [0m[31mFailed with exit code 3[0m
+[38;5;236m```[39m
 ::endgroup::
 ::group::[41m FAIL [49m [1msecrets:lint-secrets[22m
-[48;5;0m　[31m⏺[39m STDERR　[49m
+[48;5;236m　[31m⏺[39m STDERR　[49m
+[38;5;236m```[39m
 Error: Cannot read config file: /Volumes/x/playground/moonrepo/.secretlintrc.cjs
 Error: Cannot find module './standards/secrets/dist/secretlintrc'
 Require stack:
@@ -722,6 +807,7 @@ Require stack:
     [32m'/Volumes/x/playground/moonrepo/standards/secrets/node_modules/secretlint/node_modules/rc-config-loader/lib/rc-config-loader.js'[39m
   ]
 }
+[38;5;236m```[39m
 ::endgroup::
 ::group::[42m PASS [49m [1mtiltfile:lint-tiltfile[22m
 [34m$ buildifier '--mode=check' '--lint=warn' '-config=standards/tiltfile/.buildifier.json' ./Tiltfile ./apps/some-node-app/Tiltfile ./tools/tilt/main.tilt ./tools/tilt/tsc.tilt[39m
